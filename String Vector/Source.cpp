@@ -3,24 +3,11 @@
 using namespace std;
 typedef  int number;
 
-class cars
-{
-public:
-	static int count;
-	int y;
-	cars() {
-		count++;
-	}
-};
-int cars::count = 0;
+
 
 int main()
 {
-	cars* arr[100];
-	for (size_t i = 0; i < 100; i++)
-	{
-		arr[i] = new cars;
-	}
+	
 
 	/*String str;
 	str.ToUpper();
