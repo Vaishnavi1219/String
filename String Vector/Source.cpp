@@ -1,17 +1,13 @@
 #include<iostream>
 #include"String.h"
 using namespace std;
-typedef  int number;
-
-
 
 int main()
 {
-	
-
-	/*String str;
+	String str;
 	str.ToUpper();
-	str.Print();*/
+	str.ToLower();
+	str.Print();
 	getchar();
 }
 

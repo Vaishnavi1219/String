@@ -1,8 +1,7 @@
 #pragma once
 class String
 {
-	char str[100] = "hello World";
-	int i;
+	char str[100] = "Hello World";
 	int* arr;
 	int length;
 public:
@@ -10,6 +9,8 @@ public:
 	{
 		length = 14;
 	}
+
 	void Print();
 	void ToUpper();
+	void ToLower();
 };

@@ -3,7 +3,8 @@
 
 void String::Print()
 {
-	std::cout << str;
+	std::cout << "To Upper : " << str;
+	std::cout << "To Lower : " << str;
 }
 void String::ToUpper()
 {
@@ -14,3 +15,15 @@ void String::ToUpper()
 			str[i + 1] -= 32;
 	}
 }
+void String::ToLower()
+{
+	str[0] += 32;
+	for (int i = 1; i < 13; i++)
+	{
+		if (str[i] == ' ')
+			str[i + 1] += 32;
+	}
+}
+
+
+
