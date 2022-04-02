@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	String str;
-	str.ToUpper();
+	//str.ToUpper();
 	str.ToLower();
 	str.Print();
 	getchar();
