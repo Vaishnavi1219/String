@@ -5,6 +5,7 @@ void String::Print()
 {
 	std::cout << "To Upper : " << str;
 	std::cout << "To Lower : " << str;
+	std::cout << "Length of the String : " << Extent;
 }
 void String::ToUpper()
 {
@@ -24,6 +25,10 @@ void String::ToLower()
 			str[i + 1] += 32;
 	}
 }
-
+void String::Length()
+{
+	for (int i = 0; str[i] != '\0'; ++i)
+		Extent++;
+}
 
 
