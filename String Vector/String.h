@@ -23,7 +23,7 @@ public:
 			str[i] = arr[i];
 		}
 	}
-	/*String(char* Newarr)
+	String(char* Newarr)
 	{
 		int newlength = length;
 		while (Newarr[newlength++] != '\0')
@@ -35,7 +35,7 @@ public:
 		{
 			Newarr[i] = str[i];
 		}
-	}*/
+	}
 	void Print();
 	void ToUpper();
 	void ToLower();
