@@ -1,11 +1,12 @@
 #include<iostream>
 #include"String.h"
 
-void String::Print()
-{
-	std::cout << "To Upper : " << str;
-	std::cout << "To Lower : " << str;
-	std::cout << "Length of the String : " << Extent;
+void String::Print()								
+{														
+	std::cout << "To Upper : " << str << "\n";
+	std::cout << "To Lower : " << str << "\n";
+	std::cout << "Length of the String : " << length << "\n";
+	std::cout << "String is clear : " << str;
 }
 void String::ToUpper()
 {
@@ -25,10 +26,16 @@ void String::ToLower()
 			str[i + 1] += 32;
 	}
 }
-void String::Length()
+int String::Length()
 {
-	for (int i = 0; str[i] != '\0'; ++i)
-		Extent++;
+	return length;
 }
+void String::Clear()
+{
+	for (int i = 0; i < length; i++)
+	{
+		if (str[i] == str[i])
+			str[i] = ' ';
+	}
 
-
+}
